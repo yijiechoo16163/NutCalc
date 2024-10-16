@@ -67,8 +67,19 @@
             border-top: 1px solid #ccc;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 </head>
 <body>
+
+    <script>
+        const options = {label: '🌓'}
+        const darkmode = new Darkmode(options);
+
+        function addDarkmodeWidget() {
+          darkmode.showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 
     <h1>Nutrition Calculator</h1>
 
